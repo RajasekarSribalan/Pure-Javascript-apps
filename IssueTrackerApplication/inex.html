@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Issue Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Main JS -->
+    <script type="text/javascript" src="main.js"></script>
+    <!-- bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+    <!-- Jquery JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <!-- Chance JS to generate the random ID for each issue -->
+    <script src="http://chancejs.com/chance.min.js">
+      </script>
+
+      <!-- Main content -->
+
+      <div class="container">
+        <h1>Javascript Issue Tracker <small>by rajasekar sribalan</small></h1>
+        <div class="jumbotron">
+          <h3>Add New Issue:</h3>
+          <form id="issueInputForm">
+            <div class="form-group">
+              <label for="issueDescInput">Description</label>
+              <input type="text" class="form-control" id="issueDescInput" placeholder="Describe an issue ...">
+            </div>
+            <div class="form-group">
+              <label for="issueSeverityInput">Severity</label>
+              <select class="form-control" id="issueSeverityInput">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="issueAssignedToInput">Assigned To</label>
+              <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter responsible ...">
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+        </div>
+      </div>
+  </body>
+</html>
